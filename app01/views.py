@@ -8,3 +8,7 @@ def depart_list(request):
     # [对象，对象，对象]
     queryset = models.Department.objects.all()
     return render(request, "depart_list.html",{'queryset':queryset})
+
+def depart_add(request):
+    """添加部门"""
+    return render(request, "depart_add.html")
